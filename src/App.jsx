@@ -10,13 +10,13 @@ export default function App() {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  // Отримуємо файл з UploadFile компонента
+  
   function handleFileSelect(selectedFile) {
     setFile(selectedFile);
     setResult(null);
   }
 
-  // Calculate (default або upload файл)
+  
   async function handleCalculate() {
     let text;
 
