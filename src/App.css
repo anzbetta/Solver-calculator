@@ -20,7 +20,7 @@ body {
 }
 
 .card {
-  width: 520px;
+  max-width: 520px;
   background: rgba(15, 23, 42, 0.7);
   backdrop-filter: blur(14px);
   border: 1px solid rgba(148, 163, 184, 0.15);
@@ -189,4 +189,88 @@ button:disabled {
 .file-text {
   color: #94a3b8;
   font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 16px;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 32px 24px;
+    border-radius: 20px;
+  }
+
+  .card h1 {
+    font-size: 30px;
+  }
+
+  .card p {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .bttns {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .bttns button {
+    width: 100%;
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .file-input-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .result-box p {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .card {
+    padding: 26px 18px;
+  }
+
+  .card h1 {
+    font-size: 24px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+
+  .upload-file h3 {
+    font-size: 16px;
+  }
+
+  .file-button {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .file-text {
+    font-size: 13px;
+  }
+
+  .result-box {
+    padding: 20px;
+  }
+
+  .result-box p {
+    font-size: 18px;
+  }
+
+  .loader {
+    width: 32px;
+    height: 32px;
+  }
 }

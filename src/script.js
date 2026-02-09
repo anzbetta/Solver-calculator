@@ -58,6 +58,8 @@ export function solve(text) {
       new Set([start])
     );
   }
+  console.log("Best string:", bestString);
+  console.log("Length:", bestString.length);
 
   return {
     result: bestString,
