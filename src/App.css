@@ -274,3 +274,209 @@ button:disabled {
     height: 32px;
   }
 }
+
+
+/* ===== INSTRUCTION CARD ===== */
+.instruction-card {
+  margin-top: 32px;
+}
+
+.instruction-content.open {
+  display: block;
+}
+
+.instruction-section {
+  margin-bottom: 24px;
+}
+
+.instruction-section:last-child {
+  margin-bottom: 0;
+}
+
+.instruction-section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.instruction-section p {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.instruction-section p:last-child {
+  margin-bottom: 0;
+}
+
+.instruction-section strong {
+  color: #94a3b8;
+}
+
+.instruction-rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  background: rgba(2, 6, 23, 0.5);
+}
+
+.instruction-rule .fragment {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 16px;
+  font-weight: 500;
+  color: #94a3b8;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: rgba(148, 163, 184, 0.1);
+}
+
+.instruction-rule .connector {
+  font-size: 16px;
+  color: #64748b;
+}
+
+.instruction-note {
+  text-align: center;
+  font-size: 13px !important;
+  color: #64748b !important;
+  font-style: italic;
+}
+
+.instruction-example {
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  background: rgba(2, 6, 23, 0.5);
+}
+
+.example-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.example-row code {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: #94a3b8;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgba(148, 163, 184, 0.1);
+}
+
+.example-row span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.example-arrow {
+  text-align: center;
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.example-result {
+  text-align: center;
+}
+
+.example-result code {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 15px;
+  font-weight: 500;
+  color: #94a3b8;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: rgba(148, 163, 184, 0.1);
+}
+
+.instruction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.instruction-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.list-num {
+  color: #64748b;
+  font-weight: 500;
+  min-width: 18px;
+}
+
+
+/* Instruction card responsive */
+@media (max-width: 768px) {
+  .instruction-card {
+    margin-top: 24px;
+  }
+
+  .instruction-rule {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .instruction-rule .fragment {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .example-row code {
+    font-size: 13px;
+  }
+
+  .example-result code {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .instruction-section {
+    margin-bottom: 16px;
+  }
+
+  .instruction-section h3 {
+    font-size: 12px;
+  }
+
+  .instruction-section p {
+    font-size: 12px;
+  }
+
+  .instruction-rule .fragment {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+
+  .example-row code {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .example-result code {
+    font-size: 13px;
+  }
+
+  .instruction-list li {
+    font-size: 12px;
+  }
+}

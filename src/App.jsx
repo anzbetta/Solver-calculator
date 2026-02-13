@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Result from "./Result";
 import UploadFile from "./UploadFile";
+import Instruction from "./Instruction";
 import { solve } from "./script";
 import "./App.css";
 
@@ -65,6 +66,8 @@ export default function App() {
         {!loading && result !== null && (
           <Result value={result} />
         )}
+
+        <Instruction />
       </div>
     </div>
   );
